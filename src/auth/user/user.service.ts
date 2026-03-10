@@ -20,6 +20,10 @@ export class UserService {
         return this.userRepository.find();
     }
 
+    findOne(_id: number) {
+        throw new Error('Method not implemented.');
+    }
+
     async update(id: number, updateUserDto: UpdateUserDto) {
         await this.userRepository.update(id, updateUserDto);
         return this.userRepository.findOneBy({ id });
