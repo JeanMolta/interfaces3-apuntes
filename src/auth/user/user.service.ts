@@ -16,7 +16,7 @@ export class UserService {
         private readonly roleService: RoleService,
     ) {}
 
-    findAll() {
+    findAll(username: string | undefined, email: string | undefined) {
         return this.userRepository.find();
     }
 
