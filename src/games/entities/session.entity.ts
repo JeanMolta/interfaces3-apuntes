@@ -1,6 +1,6 @@
 import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
-import { User } from '@/auth/entities/user.entity';
+import { User } from '../../auth/entities/user.entity';
 
 import { Game } from './game.entity';
 import { Participant } from './participant.entity';

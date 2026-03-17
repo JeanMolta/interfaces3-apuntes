@@ -1,9 +1,9 @@
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
-import { Game } from '@/games/entities/game.entity';
-import { Session } from '@/games/entities/session.entity';
-import { Participant } from '@/games/entities/participant.entity';
-import { Comment } from '@/games/entities/comment.entity';
+import { Game } from '../../games/entities/game.entity';
+import { Session } from '../../games/entities/session.entity';
+import { Participant } from '../../games/entities/participant.entity';
+import { Comment } from '../../games/entities/comment.entity';
 
 import { Role } from './role.entity';
 

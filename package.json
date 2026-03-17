@@ -70,9 +70,14 @@
             "^.+\\.(t|j)s$": "ts-jest"
         },
         "collectCoverageFrom": [
-            "**/*.(t|j)s"
+            "**/*.service.ts"
         ],
         "coverageDirectory": "../coverage",
-        "testEnvironment": "node"
+        "testEnvironment": "node",
+        "moduleNameMapper": {
+            "^/(.*)$": "<rootDir>/$1",
+            "^@auth/(.*)$": "<rootDir>/auth/$1",
+            "^@games/(.*)$": "<rootDir>/games/$1"
+        }
     }
 }

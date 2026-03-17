@@ -15,7 +15,7 @@
         "outDir": "./dist",
         "baseUrl": "./",
         "paths": {
-            "@/*": ["src/*"],
+            "../../*": ["src/*"],
             "@auth/*": ["src/auth/*"],
             "@games/*": ["src/games/*"]
         },
